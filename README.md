@@ -19,6 +19,7 @@ Drude damping and optics convergence (k-mesh, NBANDS, CSHIFT) are placeholders y
    (VASP LOPTICS plus a Drude term), powder-averaged intensities.
 
 Full physics, every VASP tag, and the command sequence: [docs/WORKFLOW_GUIDE.md](docs/WORKFLOW_GUIDE.md).
+Quick-start checklist and how to explain the method to a collaborator: [docs/HOWTO_AND_TALKING_POINTS.md](docs/HOWTO_AND_TALKING_POINTS.md).
 
 ## Layout
 - `scripts/` analysis and preparation scripts, SLURM array template
