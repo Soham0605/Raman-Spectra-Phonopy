@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH --job-name=ph_relax
+#SBATCH --ntasks=16
+#SBATCH --mem=32G
+#SBATCH --time=24:00:00
+#SBATCH --nodes=1
+#SBATCH --output=logs/relax_%j.log
+#SBATCH --error=logs/relax_%j.err
+# add your site's --account / --qos / --partition lines; load your VASP modules
+export OMP_NUM_THREADS=1
+cd $SLURM_SUBMIT_DIR
+srun "${VASP_BIN:-vasp_std}"

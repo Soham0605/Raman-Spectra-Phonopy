@@ -1,0 +1,16 @@
+SYSTEM = YB4_tight_relax_2
+ISTART = 0
+ICHARG = 2
+ENCUT = 910        # same as ground state; keep for every later phonon step
+PREC = Accurate
+ALGO = Normal
+ISMEAR = 1         # same smearing for relax and all displaced cells
+SIGMA = 0.05
+LREAL = .FALSE.
+IBRION = 1         # quasi-Newton; CG line search failed (ZBRENT) at noise floor
+ISIF = 2          # cell already relaxed (0.08 kB); ions only
+NSW = 200
+EDIFF = 1E-9
+EDIFFG = -1E-4     # Step 0: max force below 1e-4 eV/A
+LWAVE = .FALSE.
+LCHARG = .FALSE.

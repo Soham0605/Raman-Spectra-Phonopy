@@ -1,0 +1,34 @@
+# VASP and pseudopotentials (POTCAR is licensed, never commit it)
+POTCAR*
+WAVECAR
+CHG
+CHGCAR
+vasprun.xml
+OUTCAR
+vaspout.h5
+XDATCAR
+DOSCAR
+EIGENVAL
+IBZKPT
+PCDAT
+REPORT
+OSZICAR
+vasp.out
+# run products
+disp-*/
+m[0-9][0-9][0-9]_[pm]/
+ref/
+logs/
+*.log
+*.err
+slurm-*.out
+FORCE_SETS
+# measured data and anything derived from it (unpublished): add only with permission
+*.wdf
+*Raw_Data*
+raman_sticks.png
+raman_sticks.pdf
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

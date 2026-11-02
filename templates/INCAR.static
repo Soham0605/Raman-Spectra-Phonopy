@@ -1,0 +1,15 @@
+SYSTEM = YB4_phonon_disp
+ISTART = 0
+ICHARG = 2
+ENCUT = 910
+PREC = Accurate
+ALGO = Normal
+ISMEAR = 1
+SIGMA = 0.05
+LREAL = .FALSE.
+ADDGRID = .TRUE.
+IBRION = -1
+NSW = 0
+EDIFF = 1E-8
+LWAVE = .FALSE.
+LCHARG = .FALSE.
